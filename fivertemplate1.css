@@ -1,0 +1,229 @@
+body {
+    margin:0;
+    background-color:#06d6a0
+}
+
+.layout {
+    display:grid;
+    grid-template-areas:
+    "header1 header1"
+    "header2 header2"
+    "sidebar main"
+    "footer footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows:auto auto 1fr auto;
+    height:100vh;
+}
+.header1 {
+    grid-area: header1;
+    background:linear-gradient(to right, #43c6ac, #f8ffae);
+    color:black;
+    padding:1em;
+    font-size:35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.header2 {
+    grid-area: header2;
+    background:darkseagreen;
+    color:black;
+    padding:1em;
+    height:20px;
+}
+
+a {
+    cursor:pointer;
+    color:black;
+    text-decoration:none;
+    font-size:large;
+}
+
+aside {
+    grid-area:sidebar;
+    background-color:#f8ffe5;
+    color:black;
+    padding:1em;
+}
+
+main {
+    grid-area:main;
+    background:#06d6a0;
+    padding:1em;
+    color:black;
+    overflow-y: auto;
+}
+footer {
+    grid-area:footer;
+    background:linear-gradient(to right, #43c6ac, #f8ffae);
+    padding:1em;
+}
+
+.instagram-link {
+    grid-area:header2;
+    justify-self:right;
+    align-self:center
+}
+.instagram-icon {
+    height:40px;
+    width:40px;
+    margin-top:5px;
+    margin-right:5px
+}
+
+.elso {
+    margin-top:20%;
+    justify-self:center;
+    font-size:Xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.masodik {
+    cursor:pointer;
+    text-decoration:underline;
+    margin-top:50%;
+    justify-self:center;
+    font-size:X-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.harmadik {
+    cursor:pointer;
+    text-align:center;
+    text-decoration:underline;
+    margin-top:50%;
+    justify-self:center;
+    font-size:X-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.negyedik {
+    cursor:pointer;
+    text-decoration:underline;
+    margin-top:50%;
+    text-align:center;
+    justify-self:center;
+    font-size:X-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.ötödik {
+    cursor:pointer;
+    text-decoration:underline;
+    margin-top:50%;
+    justify-self:center;
+    font-size:X-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+aside a {
+    display:block;
+    cursor:pointer;
+    text-decoration:underline;
+    margin-top:20px;
+    justify-self:center;
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+}
+aside a:hover {
+    color:dimgray;
+}
+.instagram-icon:hover {
+    transform: scale(1.1)
+}
+h1 {
+    text-align:center;
+}
+@media (max-width: 1000px) {
+.layout {
+    display:grid;
+    grid-template-areas:
+    "header1 header1"
+    "header2 header2"
+    "sidebar main"
+    "footer footer";
+    grid-template-columns: 350px 1fr;
+    grid-template-rows:auto auto 1fr auto;
+    height:100vh;
+}
+footer {
+    grid-area:footer;
+    background:linear-gradient(to right, #43c6ac, #f8ffae);
+    padding:3em;
+}
+.a1 {
+    font-size:x-large
+}
+.header1 {
+    grid-area: header1;
+    background:linear-gradient(to right, #43c6ac, #f8ffae);
+    color:black;
+    padding:1em;
+    height:1em;
+    font-size:70px;
+    font-family:serif;
+    text-align:center
+}
+.header2 {
+    grid-area: header2;
+    background:darkseagreen;
+    color:black;
+    padding:3em;
+    height:36px;
+}
+.connection {
+    font-size:30px;
+    flex-direction: column;
+    justify-content:center;
+}
+.instagram-icon {
+    height:70px;
+    width:70px;
+    margin-top:5px;
+    margin-right:5px
+}
+aside {
+    grid-area:sidebar;
+    background-color:#f8ffe5;
+    color:black;
+    padding:1em;
+}
+.elso {
+    margin-top:20%;
+    justify-self:center;
+    font-size:Xxx-large;
+    font-family:serif;
+}
+.masodik {
+    cursor:pointer;
+    text-align:center;
+    text-decoration:none;
+    margin-top:70%;
+    justify-self:center;
+    font-size:Xxx-large;
+    font-family:serif
+}
+.harmadik {
+    cursor:pointer;
+    text-decoration:none;
+    margin-top:70%;
+    justify-self:center;
+    font-size:Xxx-large;
+    font-family:serif
+}
+.negyedik {
+    content:"Szolgálta-tásaim";
+    cursor:pointer;
+    text-decoration:none;
+    margin-top:70%;
+    justify-self:center;
+    font-size:Xxx-large;
+    font-family:serif;
+    text-align:center
+}
+.ötödik {
+    cursor:pointer;
+    text-decoration:none;
+    margin-top:70%;
+    justify-self:center;
+    font-size:Xxx-large;
+    font-family:serif
+}
+h1 {
+    font-size:xxx-large
+}
+}
